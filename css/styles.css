@@ -62,14 +62,13 @@ a{
     font-weight: bold;
 }
 
-.link-arrow::after{
-    content: ">";
+.link-arrow .fa-arrow-right-long{
     margin-left: 5px;
-    transition: margin;
+    transition: margin 0.15s;
 
 }
 
-.link-arrow:hover::after{
+.link-arrow:hover .fa-arrow-right-long{
     margin-left: 10px;
 }
 
@@ -77,5 +76,4 @@ a{
     .link-arrow{
         font-size: 1.5rem;
     }
-    
 }

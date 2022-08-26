@@ -18,41 +18,20 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body style="padding: 5rem">
-    <div class="card testimonial">
-      <div class="grid grid--1x2">
-        <div class="testimonial__image">
-          <img src="./images/testimonial.jpg" alt="A Happy smiling Customer" />
-          <span class="icon-container icon-container--accent">
-            <svg class="icon icon--primary icon--white icon--small">
-              <use xlink:href="images/sprite.svg#quotes"></use>
-            </svg>
-          </span>
-        </div>
-        <div>
-          <blockquote class="quote">
-            <p class="quote__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              quasi illum aliquam commodi ducimus, libero, laboriosam fugit
-              officiis, eligendi similique quos asperiores dicta nostrum quae
-              quam. Ratione fugit repudiandae quae.
-            </p>
-            <footer>
-              <div class="media">
-                <div class="media__image">
-                  <svg class="icon icon--primary quote__line">
-                    <use xlink:href="images/sprite.svg#line"></use>
-                  </svg>
-                </div>
-                <div class="media__body">
-                  <h3 class="media__title quote__author">John Smith</h3>
-                  <p class="quote__company">ABC Company</p>
-                </div>
-              </div>
-            </footer>
-          </blockquote>
-        </div>
+  <body>
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Item 1</h2>
+        <img
+          class="icon collapsible__chevron"
+          src="./images/chevron.svg"
+          alt=""
+        />
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, commodi?
       </div>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>

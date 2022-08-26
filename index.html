@@ -18,19 +18,40 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <div class="callout callout--primary">
+  <body style="padding: 5rem">
+    <div class="card testimonial">
       <div class="grid grid--1x2">
-        <div class="callout__content">
-          <h2 class="callout__heading">Ready To Get Started</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum in hic
-            minus laborum dolore modi aut quibusdam nihil, rerum at officia,
-            debitis vero sequi perspiciatis architecto praesentium, obcaecati
-            possimus nulla.
-          </p>
+        <div class="testimonial__image">
+          <img src="./images/testimonial.jpg" alt="A Happy smiling Customer" />
+          <span class="icon-container icon-container--accent">
+            <svg class="icon icon--primary icon--white icon--small">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+            </svg>
+          </span>
         </div>
-        <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+        <div>
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              quasi illum aliquam commodi ducimus, libero, laboriosam fugit
+              officiis, eligendi similique quos asperiores dicta nostrum quae
+              quam. Ratione fugit repudiandae quae.
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">John Smith</h3>
+                  <p class="quote__company">ABC Company</p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
       </div>
     </div>
   </body>

@@ -142,7 +142,7 @@ a{
     margin-bottom: 1rem;
 }
 
-@media screen and (min) {
+@media screen and (min-width: 1024px) {
     .list--tick .list__item{
         padding-left: 0;
     }
@@ -190,11 +190,19 @@ a{
     cursor: pointer;
     font-size: 1.8rem;
     font-weight: 600;
+    outline: 0;
     margin: 1rem 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
+}
+
+.btn .icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 
 .btn--primary{
@@ -233,7 +241,7 @@ a{
 
 .btn--block{
     width: 100%;
-    display: block;
+    display: inline-block;
 }
 
 .btn--stretched{
@@ -261,13 +269,6 @@ a{
 ::placeholder{
     color: #cdcbd7;
 }
-
-@media screen and (min-width: 1024px) {
-    .input{
-        font-size: 1.5rem;
-    }
-}
-
 /* Input Group */
 
 .input-group{
@@ -279,12 +280,21 @@ a{
 .input-group .input{
     border: 0;
     flex-grow: 1;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn{
-    margin: 4px;
+    margin: 4px; 
 }
+
+
+@media screen and (min-width: 1024px) {
+    .input{
+        font-size: 1.5rem;
+    }
+}
+
 
 /* Cards */
 .card{
@@ -372,7 +382,7 @@ a{
 }
 
 .media__title{
-    margin-top: 0%;
+    margin-top: 0;
 }
 
 .media__body{
@@ -409,7 +419,7 @@ a{
 .quote__company{
     color: var(--color-headings);
     font-style: normal;
-    opacity: .4;
+    opacity: 0.4;
     font-size: 2rem;
 }
 
@@ -488,7 +498,6 @@ a{
 /* Testimonials */
 .testimonial{
     padding: 3rem;
-    overflow: visible;
 }
 
 .testimonial__image{
@@ -506,6 +515,10 @@ a{
 } 
 
 @media screen and (min-width: 768px) {
+    .testimonial__image{
+        margin: 0;
+    }
+    
     .testimonial .quote,
     .testimonial .quote__author{
         font-size: 2.4rem;
@@ -668,5 +681,30 @@ a{
     .hero__content{
         text-align: left;
         align-self: center;
+    }
+}
+
+/* Domain Block */
+.block-domain .input-group{
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+
+.block-domain__prices{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    font-size: 2rem;
+    font-weight: 600;
+    justify-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .block-domain__prices{
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
 }

@@ -524,6 +524,7 @@ a{
 
 .testimonial__image{
     position: relative;
+    margin: 0 3rem;
 }
 
 .testimonial__image > img{
@@ -590,6 +591,7 @@ a{
 
 .block__header{
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .block__heading{

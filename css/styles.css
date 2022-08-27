@@ -611,12 +611,12 @@ a{
 
 .block--skewed-right{
     padding-bottom: calc(var(--padding-verticle) + 4rem );
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
 }
 
 .block--skewed-left{
     padding-bottom: calc(var(--padding-verticle) + 4rem );
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 }
 
 .container{
@@ -715,6 +715,7 @@ a{
 }
 
 .block-domain__prices{
+    color: var(--color-headings);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
@@ -763,7 +764,6 @@ a{
     .feature:nth-last-of-type(even) .feature__content{
         order: 2;
     }
-    
 }
 
 /* Showcase Block */

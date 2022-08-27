@@ -4,7 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moshify</title>
+    <meta
+      name="description"
+      content="Deploy your websites in less than 60 seconds."
+    />
+    <meta property="og:type" content="website" />
+    <title>Moshify - Go Online for just $9</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-sm.png"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon-md.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon-lg.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,13 +50,15 @@
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
-          <p class="hero__tagline">
+          <h1 class="block__heading" data-aos="fade-right">
+            Cloud Hosting for Pros
+          </h1>
+          <p class="hero__tagline" data-aos="fade-left">
             Deploy your websites in less than 60 percent.
           </p>
-          <a href="" class="btn btn--accent btn--streched">Get Started</a>
+          <a href="" class="btn btn--accent btn--streched"> Get Started</a>
         </header>
-        <picture>
+        <picture data-aos="zoom-in">
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -57,7 +72,7 @@
       </div>
     </section>
 
-    <section class="block container block-domain">
+    <section class="block container block-domain" data-aos="zoom-in-up">
       <header class="block__header">
         <h2>Starting at $9 per month</h2>
         <p>
@@ -88,7 +103,7 @@
       </ul>
     </section>
 
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="fade-up">
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -164,7 +179,8 @@
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
+          >
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -195,7 +211,7 @@
       </article>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#computer"></use>
@@ -226,7 +242,7 @@
       </article>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -257,7 +273,7 @@
       </article>
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#clock"></use>
@@ -293,7 +309,7 @@
         <h2>User-friendly control Panel</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
+        <picture class="block-showcase__image" data-aos="fade-right">
           <source
             type="image/webp"
             srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
@@ -302,9 +318,9 @@
             type="image/png"
             srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
           />
-          <img src="./images/ipad.png" />
+          <img src="./images/ipad.png" alt="An ipad showing dashboard" />
         </picture>
-        <ul class="list">
+        <ul class="list" data-aos="fade-up">
           <li>
             <div class="media">
               <div class="media__image">
@@ -365,7 +381,7 @@
         <h2>What our Customers are Saying</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </header>
-      <div class="container">
+      <div class="container" data-aos="zoom-out-down">
         <div class="card testimonial">
           <div class="grid grid--1x2">
             <div class="testimonial__image">
@@ -425,14 +441,14 @@
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Products</h2>
             <img
               class="icon collapsible__chevron"
               src="./images/chevron.svg"
               alt=""
             />
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Website Hosting</a></li>
@@ -444,14 +460,14 @@
         </section>
 
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Company</h2>
             <img
               class="icon collapsible__chevron"
               src="./images/chevron.svg"
               alt=""
             />
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">About</a></li>
@@ -462,14 +478,14 @@
         </section>
 
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Support</h2>
             <img
               class="icon collapsible__chevron"
               src="./images/chevron.svg"
               alt=""
             />
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Contact</a></li>
@@ -480,14 +496,14 @@
         </section>
 
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Domains</h2>
             <img
               class="icon collapsible__chevron"
               src="./images/chevron.svg"
               alt=""
             />
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Domain Cheker</a></li>
@@ -497,13 +513,17 @@
           </div>
         </section>
 
-        <section class="footer__brand">
+        <div class="footer__brand">
           <img src="./images/logo.svg" alt="" />
           <p class="footer__copyright">Copyright 2022 Muhammad Usman</p>
-        </section>
+        </div>
       </div>
     </footer>
 
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

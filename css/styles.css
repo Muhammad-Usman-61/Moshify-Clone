@@ -425,7 +425,7 @@ a{
 /* Quotes */
 
 .quote{
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-style: italic;
     color: var(--color-body-darker);
     line-height: 1.3;

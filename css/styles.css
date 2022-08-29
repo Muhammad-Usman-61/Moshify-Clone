@@ -14,10 +14,17 @@
     box-sizing: border-box;
 }
 
+html,body
+{
+    width: 100%;
+    overflow-x: hidden; 
+}
+
 /* Typography */
 html{
     /* 62.5% of 16px = 10px */
     font-size: 62.5%;
+    
 }
 body{
     color: var(--color-body);
@@ -33,7 +40,7 @@ h1,h2,h3{
 }
 
 h1{
-    font-size: 7rem;
+    font-size: 6rem;
 }
 h2{
     font-size: 4rem;
@@ -856,4 +863,9 @@ a{
     .footer__heading{
         font-size: 1.6rem;
     }
+}
+
+/* Callout */
+.callout-signup{
+    transform: translateY(5rem);
 }
